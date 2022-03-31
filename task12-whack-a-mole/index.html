@@ -7,8 +7,12 @@
   <link rel="stylesheet" href="src/assets/style.css">
 </head>
 
+<div id="mouse">
+  <img src="src/assets/imgs/hamer" style="width:100%; height:100%;">
+</div>
+
 <body>
-  <h1>Whack-a-mole! <span class="score">0</span></h1>
+  <h1>Whack-a-mole! <br><span id="player">Anonymous</span><span> : </span><span class="score">0</span> pts</h1>
   <div class="game">
     <div class="hole hole1">
       <div class="mole"></div>
@@ -28,8 +32,25 @@
     <div class="hole hole6">
       <div class="mole"></div>
     </div>
+    <div class="hole hole7">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole8">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole9">
+      <div class="mole"></div>
+    </div>
   </div>
   <button onClick="game.startGame()">WHACK!</button>
+  <input type="text" id="fname" name="fname" onkeydown="input_key_pressed(this.value)">
+  <div>Best scores: <br>
+        1) <span id = "record1">1</span> pts<br>
+        2) <span id = "record2">2</span> pts<br>
+        3) <span id = "record3">0</span> pts<br>
+        4) <span id = "record4">0</span> pts<br>
+        5) <span id = "record5">0</span> pts<br>
+  </div>
   <audio src="src/assets/sounds/hihat.wav"></audio>
   <audio src="src/assets/sounds/kick.wav"></audio>
   <script src="src/game.js"></script>

@@ -1,0 +1,158 @@
+<div class="page_container">
+
+  <div class="section_container header_container">
+    <img [src]="hamburger" id="menu" #menu (click)="open_menu()" class="hamburger_img">
+    <img [src]="logo" class="logo_img">
+  </div>
+
+  <div id="menu_items" #menu_items>
+    <div class="menu_item"> Home </div>
+    <div class="menu_item"> Characters </div>
+    <div class="menu_item"> Islands </div>
+    <div class="menu_item"> Mist Objects </div>
+    <div class="menu_item"> Flags </div>
+  </div>
+
+  <div class="section_container illustration_container">
+    <img [src]="team" class="illustration_img">
+    <div class="gradient"></div>
+  </div>
+
+  <div class="section_container tablet_container">
+    <h3 class="sinopsis_title">Sipnosis</h3>
+    <p class="sinopsis">Dawn Island is an island located in the East Blue and where the Goa Kingdom is situated.</p>
+    <p class="sinopsis">It is the home island of Monkey D. Luffy and the starting point of his journey into piracy, as well as the home island of his father, Monkey D. Dragon.
+    <span id="dots" #dots>...</span></p>
+    <span id="more" #moreText>
+      <p class="sinopsis">This is also the adopted home of Portgas D. Ace after the death of his mother and the home of Sabo and his family.</p>
+      <p class="sinopsis">Reverse Mountain is an extremely tall mountain at one of the points where the four Blues meet and is one of the two known entrances to the Grand Line.</p>
+      <p class="sinopsis">It is located in the Red Line and is the geographical antipode of Mary Geoise.</p>
+    </span>
+    <span (click)="read_more()" id="read_more_btn" #btnText>Read All</span>
+  </div>
+
+  <div class="section_container search_container tablet_container">
+    <input type="text" value="  Search Characters, Islands or Objects" (focus)="search_bar('on')" (focusout)="search_bar('off')" id="search-form" #input_text name="fname">
+  </div>
+
+  <div class="section_container tablet_container">
+    <div class="section_header">
+      <span class="section_title">Characters</span>
+      <span class="section_more">See all</span>
+    </div>
+    <div class="character_container">
+      <img [src]="monkeydluffy" class="character_img">
+      <h3 class="character_title">Monkey D. Luffy</h3>
+    </div>
+    <div class="character_container">
+      <img [src]="ace" class="character_img">
+      <h3 class="character_title">Portgas D. Ace</h3>
+    </div>
+    <div class="character_container char_3">
+      <img [src]="zoro" class="character_img">
+      <h3 class="character_title">Roronoa Zoro</h3>
+    </div>
+    <div class="character_container char_3">
+      <img [src]="nico" class="character_img">
+      <h3 class="character_title">Nico Robin</h3>
+    </div>
+  </div>
+
+  <div class="section_container tablet_container">
+    <div class="section_header">
+      <span class="section_title">Islands</span>
+      <span class="section_more">See all</span>
+    </div>
+    <div class="island_container">
+      <img [src]="dawn" class="character_img">
+      <div class="island_location">
+        <span class="island_name">Dawn Island</span>
+        <span class="island_place">East Blue</span>
+      </div>
+    </div>
+    <div class="island_container">
+      <img [src]="reverse" class="character_img">
+      <div class="island_location">
+        <span class="island_name">Reverse Mountain</span>
+        <span class="island_place">Red line</span>
+      </div>
+    </div>
+    <div class="island_container island_3">
+      <img [src]="reverse" class="character_img">
+      <div class="island_location">
+        <span class="island_name">Reverse Mountain</span>
+        <span class="island_place">Red line</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_container tablet_container">
+    <div class="section_header">
+      <span class="section_title">Mist Objects</span>
+      <span class="section_more">See all</span>
+    </div>
+  </div>
+
+  <div class="section_container tablet_container mistobject_main_container">
+    <div class="mistobject_container">
+      <img [src]="object" class="character_img">
+    </div>
+    <div class="mistobject_container">
+      <div class="mistobject_item">
+        <span class="mistobject_name">Gomu Gomu No Mi</span>
+        <span class="mistobject_description">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_container tablet_container mistobject_main_container">
+    <div class="mistobject_container">
+      <img [src]="object" class="character_img">
+    </div>
+    <div class="mistobject_container">
+      <div class="mistobject_item">
+        <span class="mistobject_name">Gomu Gomu No Mi</span>
+        <span class="mistobject_description">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_container tablet_container mistobject_main_container">
+    <div class="mistobject_container">
+      <img [src]="object" class="character_img">
+    </div>
+    <div class="mistobject_container">
+      <div class="mistobject_item">
+        <span class="mistobject_name">Gomu Gomu No Mi</span>
+        <span class="mistobject_description">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_container tablet_container mistobject_main_container mistobject_3">
+    <div class="mistobject_container">
+      <img [src]="object" class="character_img">
+    </div>
+    <div class="mistobject_container">
+      <div class="mistobject_item">
+        <span class="mistobject_name">Gomu Gomu No Mi</span>
+        <span class="mistobject_description">Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_container footer tablet_container">
+      <img [src]="pngwing" class="bone">
+      <img [src]="lorem" class="lorem">
+  </div>
+
+</div>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>

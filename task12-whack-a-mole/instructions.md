@@ -9,3 +9,9 @@
 * Add a level (If the score is higher than 5 go to the next level where the speed of the game is increased)
 * Add an [image](https://www.stickpng.com/img/download/5a0590e59cf05203c4b60412/image) to the cursor to improve the animation of the game.
 * Feel free to add more functionality
+
+
+
+
+* Add a level (If the score is higher than 5 go to the next level where the speed of the game is increased)
+* Feel free to add more functionality

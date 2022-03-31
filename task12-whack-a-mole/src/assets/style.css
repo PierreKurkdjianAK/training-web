@@ -1,18 +1,24 @@
-@import "clock.css";
-@import "game.css";
-
+/* @import url(clock.css); */
+@import url(game.css);
 html {
   box-sizing: border-box;
   background: #ffc600;
   font-family: 'helvetica neue';
   font-size: 20px;
-  font-weight: 200;
-}
+  font-weight: 200; }
 
 body {
-  margin: 0;
-}
+  margin: 0; }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+* {
+  box-sizing: inherit; }
+  *:before, *:after {
+    box-sizing: inherit; }
+
+#mouse {
+  position:absolute;
+  transform:translate(-50%,-50%);
+  height:10%;
+  width:10%;
+  /* background-color: blue; */
 }
